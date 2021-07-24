@@ -6,7 +6,8 @@
             I)   Copy _~/Downloads/NerdFonts/_ folder to _~/.local/share/fonts_ (create folder if absent)
             II)  Run `fc-cache -fv` to update font cache
             III) Check font install with `fc-list | grep Hack`
-            IV)  Edit _~/.dotfiles/vifm/.config/vifm/vifmrc_ to add _file Types_ properties from https://q2a.vifm.info/269/how-to-add-icons
+            IV)  Set terminal default font to 'Hack Nerd Font Regular' via Preferences->Appearance->Font
+            V)   Edit _~/.dotfiles/vifm/.config/vifm/vifmrc_ to add _file Types_ properties from https://q2a.vifm.info/269/how-to-add-icons
         b) Check preview by going to https://www.nerdfonts.com/cheat-sheet and copy-pasting any icon to terminal
     3. Set up preview:
         a) Copy _vifmimg_ and _vifmrun_ scripts from https://github.com/cirala/vifmimg to _~/.dotfiles/vifm/.config/vifm/scripts_
@@ -26,7 +27,7 @@
             VIII) Check install with `magick --version`
             IX)   (To uninstall, run `sudo make uninstall` from extracted folder)
         h) _ffmpegthumbnailer_ (for video preview) already installed in LM20
-        i) _pdftoppm_ (for pdf preview) already installed (as part of _popperler-utils_ package) in LM20
+        i) _pdftoppm_ (for pdf preview) already installed (as part of _poppler-utils_ package) in LM20
         j) Install _ffmpeg_ (for audio info preview): `sudo apt install ffmpeg`
         k) Install _fontpreview_ (for font preview):
             I)   Clone repo (in _~/Downloads/Apps/FontPreview/_) with `git clone https://github.com/sdushantha/fontpreview`

@@ -4,6 +4,8 @@
         * `git config --list --show-origin` - _View all Git settings_
         * `git config --global user.name 'DigDogData'` - _Set user name_
         * `git config --global user.email 'roy@manojitroy.com'` - _Set user email_
+        * `git config --global credential.helper cache` - _Set credential cache
+        * `git config --global credential.helper 'cache --timeout=86400'` - _Set cache timeout of 1 day (in seconds)
 
     == Commands for local repo ==
         * `git init` - _Initalize repo_
