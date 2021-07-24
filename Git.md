@@ -30,8 +30,9 @@
         * `git pull` - _Pull from remote repo_
 
     == To ignore file/folder from being committed ==
-        1. Create empty file _.gitignore_.
+        1. Create empty file _.gitignore_ with `touch .gitignore`
         2. Add file/folder name to _.gitignore_.
+        3. If this file was tracked before, run `git rm --cached <file-path>` to tell Git not to track it 
 
     == Customize Git Bash (on Windows) ==
         1. Create folder _$HOME\.config\git_.
