@@ -26,13 +26,15 @@
         * To clone remote repo:
             1. Go to one level above local repo path.
             2. Run `git clone <git_URL>`
-        * `git push` - _Push to remote repo_
-        * `git pull` - _Pull from remote repo_
+            3. To clone with a different name: `git clone <git_URL> <new_name>`
+        * To update remote repo: `git push`
+        * To update local repo:  `git pull`
+        * To check if local repo is linked to remote repo: `git remote -v`
 
     == To ignore file/folder from being committed ==
         1. Create empty file _.gitignore_ with `touch .gitignore`
         2. Add file/folder name to _.gitignore_.
-        3. If this file was tracked before, run `git rm --cached <file-path>` to tell Git not to track it 
+        3. If this file was tracked before, run `git rm --cached <file-path>` to tell Git not to track it
 
     == Customize Git Bash (on Windows) ==
         1. Create folder _$HOME\.config\git_.
