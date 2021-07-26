@@ -12,6 +12,7 @@
     3. Set up preview:
         a) Copy _vifmimg_ and _vifmrun_ scripts from https://github.com/cirala/vifmimg to _~/.dotfiles/vifm/.config/vifm/scripts_
         b) Edit _vifmrun_ (next-to-last line) to include _vifmimg_ path
+        c) Edit _vifmimg_ to add `-hide_banner` flag to `ffmpeg` for audio preview (to hide ffmpeg banner details)
         c) Make these scripts executable with `chomd a+x <filename>`
         d) Set alias (in _.bashrc_) to run _vifm_ via _vifmrun_: `alias vf='~/.config/vifm/scripts/vifmrun .'`
         e) Edit _~/.dotfiles/vifm/.config/vifm/vifmrc_ to add _fileviewer_ properties from https://github.com/cirala/vifmimg
