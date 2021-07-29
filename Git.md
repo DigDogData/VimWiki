@@ -30,6 +30,9 @@
         * To update remote repo: `git push`
         * To update local repo:  `git pull`
         * To check if local repo is linked to remote repo: `git remote -v`
+        * To force-merge (during merge conflict):
+            1. `git fetch` - Fetch from default remote, origin
+            2. `git reset --hard origin/master` - Reset local branch (master) to origin's master
 
     == To ignore file/folder from being committed ==
         1. Create empty file _.gitignore_ with `touch .gitignore`
