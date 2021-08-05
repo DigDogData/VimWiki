@@ -42,6 +42,25 @@
         >>> `a = 5`
         >>> `filename = 'decisiontree_' + str(a) + '.png'`
 
+    == Handling lists ==
+        * Delete values in list:
+            >>> `spam = ['cat', 'bat', 'rat', 'elephant']`
+            >>> `del spam[2]`
+            >>> `spam`
+            >>> ['cat', 'bat', 'elephant']
+
+        * Looping with lists:
+            >>> `for i in range(len(spam)):`
+                    `print('Index ' + str(i) + ' in spam is: ' + spam[i])`
+            >>> `for index, item in enumerate(spam):`
+                    `print('Index ' + str(index) + ' in spam is: ' + item)`
+        * Randomizing list:
+            >>> `import random`
+                `random.choice[spam]`
+            >>> 'rat'
+            >>> `random.shuffle(spam)`
+            >>> ['rat', 'cat', 'elephant', 'bat']
+
     == Handling NA ==
         * Basic syntax:
             >>> `df.info(null_counts=True)`         # detailed info with _NA_
