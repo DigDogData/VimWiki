@@ -1,5 +1,17 @@
 = HDDTemp setup =
 
+    == Add HDD temp monitor to xfce sensors-plugin (Linux Mint 20) ==
+    1. `cd /etc/default`
+    2. `sudo cp hddtemp hddtemp.orig`
+    3. `sudo nano hddtemp`
+        * `RUN_DAEMON="true"`
+        * `Ctrl-x -> y` (save -> exit)
+    4. _hddtemp.service_ requires root privilege -> dirty hack (has security risk):
+        * `sudo chmod u+s /usr/sbin/hddtemp`
+    5. Set monitor color to `#00ff00`
+    6. Reboot
+
+    == For Manjaro ==
     1. Install hddtemp: `sudo pacman -S hddtemp`
     2. Edit _hddtemp.service_:
         a) `sudo systemctl edit hddtemp.service`
