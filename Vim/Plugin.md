@@ -24,7 +24,7 @@
             e) `$./autogen.sh`
             f) `$./configure --prefix=/home/roy/Documents/Ctags`
             h) `$make && make install`
-            i) Add ctags path to system path: `$echo export PATH=$HOME/Documents/Ctags/bin:$PATH >> ~/.bashrc`
+            i) Delete ctags repo in ~/Downloads
 
     == Snippets setup ==
         * Loading these two plugins in console vim prevents the window to scale up. To bypass this:
