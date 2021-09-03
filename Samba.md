@@ -5,7 +5,7 @@
     3. Copy _smb.conf_ from _/home/roy/Documents/Scripts/Configs_ to _/etc/samba_:
         a) `cd /etc/samba`
         b) `sudo mv smb.conf smb.conf.bak`
-        c) Stop smbd: `sudo systemctl stop smbd` -> `systemctl status smbd`
         d) `sudo cp ~/Documents/Scripts/smb.conf .`
     4. Test config: `testparm`
-    5. Start samba: `sudo systemctl start smbd` -> `systemctl status smbd`
+    5. Retart samba: `sudo systemctl restart smbd` -> `systemctl status smbd`
+    6. Allow samba in firewall: `sudo ufw allow samba`
