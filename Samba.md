@@ -17,8 +17,7 @@
         c) Permanent mount:
            I) `sudo xed /etc/fstab`
            II) Add lines at the end (make sure last line is blank):
-               # samba mount on /mnt/pc
-               //pc-3.local/roy /mnt/pc cifs credentials=/home/roy/.smbcred,uid=roy,gid=roy 0 0
-               
+               `# samba mount on /mnt/pc`
+               `//pc-3.local/roy /mnt/pc cifs credentials=/home/roy/.smbcred,uid=roy,gid=roy 0 0`
            III) Update fstab after each reboot (mount samba in thuner first):
                 `sudo mount -a`
