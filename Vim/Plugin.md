@@ -26,6 +26,10 @@
             h) `$make && make install`
             i) Delete ctags repo in ~/Downloads
 
+    == Color Scheme setup (without using plugin) ==
+        * Color scheme files are stored in _~/.vim/colors_ and _lightline_ files are in _~/.vim/autoload/lightline_
+        * Move new plugin color scheme file in corresponding locations and add necessary customizations
+
     == Snippets setup ==
         * Loading these two plugins in console vim prevents the window to scale up. To bypass this:
             * Put _resize.vim_ file in _$HOME\vimfiles\after\plugin_.
