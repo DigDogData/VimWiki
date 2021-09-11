@@ -28,7 +28,9 @@
 
     == Color Scheme setup (without using plugin) ==
         * Color scheme files are stored in _~/.vim/colors_ and _lightline_ files are in _~/.vim/autoload/lightline_
-        * Move new plugin color scheme file in corresponding locations and add necessary customizations
+        * Move new plugin color scheme file in corresponding locations and add necessary customizations:
+            * Add long line alert code at the end of each theme file in _~/.vim/colors_
+            * Add needed tweaks near the beginning of _gruvbox8_ and _onedark_ scheme files in _~/.vim/colors_
 
     == Snippets setup ==
         * Loading these two plugins in console vim prevents the window to scale up. To bypass this:
